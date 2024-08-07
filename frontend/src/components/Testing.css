@@ -1,0 +1,121 @@
+.typing-test {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif; /* Use a modern, readable font */
+    text-align: center; /* Center the content */
+  }
+  
+  .word-display {
+    background-color: #f8f8f8; /* Lighter background color */
+    padding: 30px; /* Increased padding for better spacing */
+    margin-bottom: 30px;
+    border-radius: 8px; /* Slightly rounded corners */
+    font-size: 24px; /* Increased font size for better readability */
+    line-height: 1.8; /* Increased line-height for better spacing */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .word-row {
+    display: flex; /* Use flexbox for word rows */
+    justify-content: center; /* Center the words horizontally */
+  }
+  
+  .word {
+    margin-right: 10px;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .current-word {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #333; /* Darker color for the current word */
+  }
+  
+  .correct {
+    color: #4caf50; /* Green color for correct words */
+  }
+  
+  .incorrect {
+    color: #f44336; /* Red color for incorrect words */
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #ccc; /* Border for the input field */
+    border-radius: 4px; /* Slightly rounded corners */
+    transition: border-color 0.3s ease; /* Smooth border transition */
+  }
+  
+  input:focus {
+    outline: none; /* Remove default outline */
+    border-color: #666; /* Change border color on focus */
+  }
+  
+  .timer {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #666; /* Muted color for the timer */
+  }
+  
+  .results {
+    background-color: #f0f0f0; /* Lighter background color for results */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .results h3 {
+    margin-top: 0; /* Remove top margin for the heading */
+  }
+  
+  .results p {
+    margin-bottom: 10px; /* Add some spacing between result lines */
+  }
+  
+  .results button {
+    background-color: #4caf50; /* Green color for the button */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .results button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+  }
+
+  .disabled-input {
+    background-color: #f0f0f0;
+    color: #888;
+    cursor: not-allowed;
+  }
+
+  .test-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  
+  .test-info span {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .reset-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .reset-button img {
+    width: 20px;
+    height: 20px;
+  }

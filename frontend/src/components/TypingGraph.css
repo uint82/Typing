@@ -1,0 +1,18 @@
+.typing-graph {
+    margin-top: 20px;
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .recharts-cartesian-grid-horizontal line,
+  .recharts-cartesian-grid-vertical line {
+    stroke: #3c3c3c;
+  }
+  
+  .recharts-tooltip-label {
+    color: #d4d4d4;
+  }
