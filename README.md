@@ -64,3 +64,6 @@ This token is sent back to the React Frontend and stored in Local Storage.
 If the JWT token is nearing expiration, the React Frontend can request a new token.
 This typically involves sending the current token to a refresh endpoint.
 The backend validates the current token and issues a new one if it is valid.
+
+Check out the live version of this project:
+https://abr-typingtest.netlify.app/
