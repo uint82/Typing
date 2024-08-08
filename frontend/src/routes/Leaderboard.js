@@ -13,7 +13,7 @@ const Leaderboard = () => {
     setIsLoading(true);
     setError(null);
     try {
-      const response = await axios.get(`http://localhost:8000/api/leaderboard?timeFrame=${selectedTimeFrame}`);
+      const response = await axios.get(`http://localhost:8000/api/leaderboard/?timeFrame=${selectedTimeFrame}`);
       setLeaderboardData(response.data);
     } catch (err) {
       setError('Failed to fetch leaderboard data. Please try again later.');
