@@ -50,11 +50,11 @@
 }
 
 .word.correct {
-    color: #6a9955; /* Green color */
+    color: #6a9955; 
 }
 
 .word.incorrect {
-    color: #f44747; /* Red color */
+    color: #f44747;
 }
 
 .char {
@@ -198,7 +198,7 @@ input {
     }
   }
   
-  /* You might want to add a media query for smaller screens */
+  
   @media (max-width: 600px) {
     .login-message-popup {
       right: 10px;
