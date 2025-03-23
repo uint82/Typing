@@ -409,7 +409,7 @@ const wordList = [
             if (inputRef.current) {
                 inputRef.current.focus();
             }
-        }, 500); // Match this with the animation duration
+        }, 500); 
     };
     
       return (
