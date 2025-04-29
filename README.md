@@ -1,69 +1,119 @@
-**THE PROJECT STRUCTURE**
+# Typing Test 📝⌨️
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/f6501d1a-fba3-4488-baf2-c236663435f9">
+![TypeMaster Pro Banner](https://via.placeholder.com/1200x300/3498db/ffffff?text=TypeMaster+Pro)
 
+A modern, feature-rich typing practice platform built to help you improve your typing speed and accuracy through gamified exercises, statistics tracking, and community leaderboards.
 
+## 🚀 Features
 
-**Explanation:**
-1. Client (Web Browser): This is where my React front end runs after being loaded from Netlify.
-2. Netlify: Hosts my compiled React application, serving it to clients.
-3. PythonAnywhere: Hosts my Django backend, including:
-   - Django App: my main application logic
-   - Django REST Framework: Provides RESTful API endpoints
-   - Database: Stores my application data
+### ⌨️ Typing Experience
+- **Live WPM Tracking**: Real-time words-per-minute calculations as you type
+- **Accuracy Metrics**: Detailed breakdown of your accuracy and error patterns
 
-**The flow usually goes like this:**
+### 📊 Progress Tracking
+- **Comprehensive History**: View all your past typing tests with detailed metrics
+- **Progress Charts**: Visual representation of your improvement over time
+- **Performance Analytics**: Insights into your typing patterns and areas for improvement
 
-1. **User Interaction:**
-The user interacts with the React Frontend in their web browser.
-This could be actions like logging in, submitting a form, or requesting data.
+### 👥 User Profiles
+- **Achievement System**: Unlock achievements based on your typing milestones
+- **Public Profiles**: Showcase your typing stats to the community
 
-2. **JWT Storage/Retrieval:**
-The React app interacts with the browser's Local Storage to store or retrieve the JWT token.
-After a successful login, the token is stored here.
-For subsequent requests, the token is retrieved from here.
+### 🏆 Leaderboards
+- **Global Rankings**: Compete with typists worldwide
 
-3. **API Requests:**
-The React Frontend makes API requests to the backend.
-These requests go through Netlify, which hosts the React build.
-The JWT token is included in the request headers for authentication.
+## 🛠️ Tech Stack
 
-4. **Request Forwarding:**
-Netlify forwards these API calls to your Django backend hosted on PythonAnywhere.
+- **Frontend**: React, Redux, SCSS
+- **Backend**: Django REST Framework
+- **Database**: MySQL
+- **Authentication**: JWT, OAuth2
+- **Testing**: Jest, Pytest
+- **Deployment**: Pythonanywhere and netlify
 
-5. **Authentication:**
-When the request reaches the Django REST Framework, it first goes through the JWT Authentication process.
-The JWT token is validated to ensure the request is from an authenticated user.
+## 📋 Prerequisites
 
-6. **Request Processing:**
-If authentication is successful, the Django REST Framework passes the request to the appropriate view in your Django App.
-The Django App processes the request, which might involve business logic, data validation, etc.
+Before you begin, ensure you have the following installed:
+- Python 3.8+
+- Node.js 14+
+- npm or yarn
+- MySQL 8.0+
+- Git
 
-7. **Data Operations:**
-If the request requires data operations, the Django App interacts with the Database.
-This could involve querying, inserting, updating, or deleting data.
+## 🏗️ Installation
 
-8. **Response:**
-After processing, the Django backend prepares a response.
-This response is sent back through the Django REST Framework, and then to Netlify.
+### Clone the repository
+```bash
+git clone https://github.com/uint82/typemaster-pro.git
+cd typemaster-pro
+```
 
-9. **UI Update:**
-Netlify forwards the response to the React Frontend.
-The React app then updates the UI based on the response, completing the cycle.
+### Backend Setup
+```bash
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
+# Install dependencies
+pip install -r requirements.txt
 
-Additional Flows:
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your MySQL credentials and other settings
 
-**Login:**
-When a user logs in, the credentials are sent to the backend.
-If valid, the JWT Authentication component generates a new JWT token.
-This token is sent back to the React Frontend and stored in Local Storage.
+# Run migrations
+python manage.py migrate
 
+# Load sample data (optional)
+python manage.py loaddata sample_data.json
 
-**Token Refresh:**
-If the JWT token is nearing expiration, the React Frontend can request a new token.
-This typically involves sending the current token to a refresh endpoint.
-The backend validates the current token and issues a new one if it is valid.
+# Start Django server
+python manage.py runserver
+```
 
-Check out the live version of this project:
-https://abr-typingtest.netlify.app/
+### Frontend Setup
+```bash
+# Navigate to frontend directory
+cd frontend
+
+# Install dependencies
+npm install  # or: yarn install
+
+# Start development server
+npm start  # or: yarn start
+```
+
+### Access the Application
+Open your browser and navigate to `http://localhost:3000`
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 🔮 Future Plans
+
+- **AI-Based Recommendations**: Personalized practice suggestions
+- **Language Support**: Expand beyond English to other languages
+- **Various Test Type**: More typing test type like Quotes, Hard, Easy
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📧 Contact
+
+- **Developer**: Hilmi Abroor
+- **Email**: [abrorhilmi6@gmail.com]
+- **LinkedIn**: [Hilmi Abroor]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/hilmi-abror-022123204/))
+
+---
+
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/uint82">uint82</a>
+</p>
