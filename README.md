@@ -1,6 +1,6 @@
 # Typing Test 📝⌨️
 
-![TypeMaster Pro Banner](https://via.placeholder.com/1200x300/3498db/ffffff?text=TypeMaster+Pro)
+![image](https://github.com/user-attachments/assets/92ff1f5d-ad6f-49ab-a1d6-68b11f7736a3)
 
 A modern, feature-rich typing practice platform built to help you improve your typing speed and accuracy through gamified exercises, statistics tracking, and community leaderboards.
 
