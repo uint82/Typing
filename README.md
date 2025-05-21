@@ -108,7 +108,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-- **Developer**: Hilmi Abroor
+- **Developer**: Abroor Hilmi
 - **Email**: [abrorhilmi6@gmail.com]
 - **LinkedIn**: [Hilmi Abroor]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/hilmi-abror-022123204/))
 
